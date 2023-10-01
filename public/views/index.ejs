@@ -7,8 +7,27 @@
 
     <link rel="stylesheet" href="styles/index.css" />
     <script src="scripts/index.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <%- include('components/header.ejs') %>
+
+    <section class="section-hero">
+      <img src="components/section-hero.webp" class="bg" alt="" />
+      <img
+        src="components/gelecekkalemlerlogo.webp"
+        alt="Gelecek Kalemler Logo"
+        class="logo"
+      />
+      <div class="texts">
+        <h1 class="title">Gelecek Kalemler</h1>
+        <p class="subtitle">Liseler Arası Tiyatro Yazma Yarışması</p>
+      </div>
+    </section>
   </body>
 </html>
