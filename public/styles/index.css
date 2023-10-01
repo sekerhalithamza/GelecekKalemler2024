@@ -76,7 +76,7 @@ li {
   width: 100%;
   height: auto;
   padding-block: 10rem;
-  padding-inline: 10rem;
+  padding-inline: 20rem;
   background-color: #000;
   display: flex;
   flex-direction: column;
