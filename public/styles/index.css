@@ -1,0 +1,102 @@
+/* Classic Elements */
+
+@import "fonts/Inkfree.ttf";
+@import "fonts/Roboto-Regular.ttf";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  scroll-behavior: smooth;
+  font-size: 1.6rem;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+/* Header */
+
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  width: 100%;
+  padding-inline: 10rem;
+  padding-block: 5rem;
+  justify-content: space-between;
+  align-items: center;
+  background-image: linear-gradient(to bottom, #0009, #0005, #0000);
+}
+
+.header .list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.header .list .item a {
+  font-size: 2.4rem;
+  font-weight: 500;
+  cursor: pointer;
+  color: #fff;
+}
+
+.header .buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.header .buttons .btn {
+  font-size: 2.4rem;
+  font-weight: 400;
+  padding: 1.5rem 3rem;
+  border-radius: 5px;
+  border: 0.4rem solid #fff;
+  cursor: pointer;
+}
+
+.header .buttons .btn.register-btn {
+  background-color: #fff;
+  color: #000;
+}
+
+.header .buttons .btn.login-btn {
+  background-color: #0002;
+  color: #fff;
+}
+
+.header .buttons .user-btn {
+  background-color: #fff;
+  width: 6rem;
+  height: 6rem;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header .buttons .user-btn svg {
+  fill: #000;
+  width: 4.8rem;
+  height: 4.8rem;
+}

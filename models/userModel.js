@@ -1,4 +1,3 @@
-const e = require("express");
 const mongoose = require("mongoose");
 
 // Data scheme
@@ -13,20 +12,18 @@ const userScheme = new mongoose.Schema({
     required: [true, "A user must have an email"],
     unique: true,
   },
+  phone: {
+    type: String,
+    required: [true, "A user must have a phone number"],
+  },
   school: {
     type: String,
     required: [true, "A user must have a school"],
     trim: true,
   },
-  data: {
+  password: {
     type: String,
-    required: [true, "There was a error. Error code: 500"],
-    unique: true,
-  },
-  certificate: {
-    type: String,
-    required: [true, "There was a error. Error code: 501"],
-    unique: true,
+    required: [true, "A user must have a password"],
   },
 });
 

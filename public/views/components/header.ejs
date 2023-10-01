@@ -1,0 +1,19 @@
+<header class="header">
+  <ul class="list">
+    <li class="item"><a href="#">Ana Sayfa</a></li>
+    <li class="item"><a href="#">Hakkında</a></li>
+    <li class="item"><a href="#">Duyurular</a></li>
+    <li class="item"><a href="#">SSS</a></li>
+    <li class="item"><a href="#">İletişim</a></li>
+  </ul>
+  <div class="buttons">
+    <% if (!user) { %>
+    <a href="#" class="user-btn" aria-label="Kullanıcı Paneli"
+      ><svg><use xlink:href="components/sprite.svg#user"></use></svg
+    ></a>
+    <% } else { %>
+    <a href="#" class="btn login-btn">Giriş Yap</a>
+    <a href="#" class="btn register-btn">Kayıt Ol</a>
+    <% } %>
+  </div>
+</header>

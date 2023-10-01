@@ -1,5 +1,6 @@
 // MODULES
 const express = require("express");
+const session = require("express-session");
 const mongoose = require("mongoose");
 const fs = require("fs");
 const dotenv = require("dotenv");
@@ -22,13 +23,15 @@ mongoose
 
 // MIDDLEWARES
 if (process.env.NODE_ENV === "development") app.use(morgan("dev"));
-app.use(express.json());
-app.use(express.static(`${__dirname}/public`));
 
 // ROUTERS
-const userRouter = require("./routers/userRouter");
+app.set("view engine", "ejs");
 
-app.use("/api/v1/users", userRouter);
+app.set("views", `${__dirname}/public/views`);
+
+app.use(express.static(`${__dirname}/public`));
+
+app.use("/", require("./routers/siteRouter"));
 
 // Starting the server
 const port = process.env.port || 3000;
