@@ -129,7 +129,83 @@ li {
   border-radius: 10px;
 }
 
-/* faq */
+/* Annocuments */
+
+.section-annocuments {
+  width: 100%;
+  background-color: #1c1c1c;
+  padding-block: 10rem;
+  padding-inline: 20rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+  height: 100vh;
+}
+
+.section-annocuments .title {
+  font-size: 6.4rem;
+  font-weight: 400;
+  width: fit-content;
+  border-bottom: 1rem solid #aeaeae;
+}
+
+.section-annocuments .wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5rem;
+}
+
+.section-annocuments .wrapper .container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 3rem;
+  border-bottom: #aeaeae 0.5rem solid;
+  padding-block: 2rem;
+}
+
+.section-annocuments .wrapper .container .top {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.section-annocuments .wrapper .container .top .subtitle {
+  font-size: 2.4rem;
+  font-weight: 400;
+}
+
+.section-annocuments .wrapper .container .top .date {
+  font-size: 2.2rem;
+  color: #aeaeae;
+}
+
+.section-annocuments .wrapper .container .text {
+  font-size: 2rem;
+  color: #aeaeae;
+}
+
+.section-annocuments .btn {
+  width: fit-content;
+  padding-inline: 2rem;
+  padding-block: 1.5rem;
+  background-color: transparent;
+  border: 0.3rem solid #fff;
+  align-self: center;
+  border-radius: 5px;
+  font-size: 2.4rem;
+  color: #fff;
+}
+
+/* FAQ */
 
 .section-faq {
   background-color: #000;
