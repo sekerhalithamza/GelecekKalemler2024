@@ -320,6 +320,96 @@ li {
   color: #aeaeae;
 }
 
-/* FAQ */
+/* Contact */
 
-/* Mail */
+.section-contact {
+  width: 100%;
+  background-color: #1c1c1c;
+  padding-block: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding-inline: 20rem;
+  gap: 5rem;
+}
+
+.section-contact .title {
+  font-size: 6.4rem;
+  font-weight: 400;
+  width: fit-content;
+  border-bottom: 1rem solid #aeaeae;
+}
+
+.section-contact .wrapper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.section-contact .wrapper .start {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.section-contact .wrapper .start .title {
+  font-size: 2.4rem;
+  border: none;
+}
+
+.section-contact .wrapper .start .subtitle {
+  color: #aeaeae;
+  font-size: 2rem;
+}
+
+.section-contact .wrapper .end {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+}
+
+.section-contact .wrapper .end .input {
+  background-color: #000;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 2.4rem;
+  padding-block: 1rem;
+  padding-inline: 1.5rem;
+  text-align: center;
+}
+
+.section-contact .wrapper .end .input:placeholder-shown {
+  color: #aeaeae;
+}
+
+.section-contact .wrapper .end .btn {
+  background-color: transparent;
+  color: #fff;
+  font-size: 2.4rem;
+  padding-block: 1rem;
+  padding-inline: 2.5rem;
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+  border: 0.3rem solid #fff;
+}
+
+.section-contact .wrapper .end .btn {
+  background-color: transparent;
+  color: #fff;
+  font-size: 2.4rem;
+  padding-block: 1rem;
+  padding-inline: 2.5rem;
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+  border: 0.3rem solid #fff;
+}
+
+.section-contact .wrapper .end .btn:hover {
+  background-color: #fff;
+  color: #000;
+  cursor: pointer;
+}
