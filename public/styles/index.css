@@ -127,6 +127,11 @@ li {
   padding-block: 2rem;
   padding-inline: 2rem;
   border-radius: 10px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.section-about .content .container .btn:hover {
+  background-color: #aeaeae;
 }
 
 /* Annocuments */
@@ -203,6 +208,12 @@ li {
   border-radius: 5px;
   font-size: 2.4rem;
   color: #fff;
+  transition: all 0.3s ease-in-out;
+}
+
+.section-annocuments .btn:hover {
+  background-color: #fff;
+  color: #000;
 }
 
 /* FAQ */

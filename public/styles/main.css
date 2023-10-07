@@ -45,11 +45,23 @@
 .header .buttons .btn.register-btn {
   background-color: #fff;
   color: #000;
+  transition: all 0.3s ease-in-out;
+}
+
+.header .buttons .btn.register-btn:hover {
+  background-color: #aeaeae;
+  border-color: #aeaeae;
 }
 
 .header .buttons .btn.login-btn {
   background-color: #0002;
   color: #fff;
+  transition: all 0.3s ease-in-out;
+}
+
+.header .buttons .btn.login-btn:hover {
+  background-color: #fff;
+  color: #000;
 }
 
 .header .buttons .user-btn {
