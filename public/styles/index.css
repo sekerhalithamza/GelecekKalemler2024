@@ -32,6 +32,7 @@ li {
 }
 
 /* Hero */
+
 .section-hero {
   position: relative;
   width: 100%;
@@ -426,6 +427,10 @@ li {
 /* Responsive */
 
 @media (max-width: 1440px) {
+  html {
+    font-size: 56.25%; /* 9px */
+  }
+
   .section-about {
     padding-inline: 10rem;
   }
@@ -441,5 +446,31 @@ li {
 
   .section-contact {
     padding-inline: 10rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  html {
+    font-size: 50%; /* 8px */
+  }
+  .section-hero .logo {
+    width: 30rem;
+    height: 30rem;
+  }
+  .section-about {
+    padding-inline: 5rem;
+  }
+
+  .section-annocuments {
+    padding-inline: 5rem;
+    padding-block: 5rem;
+  }
+
+  .section-faq {
+    padding-inline: 5rem;
+  }
+
+  .section-contact {
+    padding-inline: 5rem;
   }
 }
