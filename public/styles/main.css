@@ -85,6 +85,82 @@
   height: 4.8rem;
 }
 
+.navbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  visibility: hidden;
+  height: 0;
+  width: 0;
+  transition: all 0.3s ease-in-out;
+  background-color: #0000;
+}
+
+.navbar.active {
+  visibility: visible;
+  z-index: 4;
+  height: 100vh;
+  width: 100%;
+  background-color: #0009;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5rem;
+}
+
+.navbar .item {
+  display: none;
+  color: #fff;
+  font-size: 6.4rem;
+}
+
+.navbar.active .item {
+  display: inline;
+}
+
+.header .nav-btn {
+  position: relative;
+  display: none;
+  width: 8rem;
+  height: 2rem;
+  background-color: transparent;
+  z-index: 5;
+}
+
+.header .nav-btn:hover {
+  cursor: pointer;
+}
+
+.header .nav-btn::after,
+.header .nav-btn::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  left: 0;
+  background-color: #fff;
+  height: 0.5rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.header .nav-btn::after {
+  top: 0;
+}
+
+.header .nav-btn::before {
+  bottom: 0;
+}
+
+.header .nav-btn.active::after {
+  top: 50%;
+  transform: translateY(-50%) rotate(45deg);
+}
+
+.header .nav-btn.active::before {
+  bottom: 50%;
+  transform: translateY(50%) rotate(-45deg);
+}
+
 /* Footer */
 
 .footer {
@@ -232,5 +308,15 @@
   .up-btn svg {
     width: 3.6rem;
     height: 3.6rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .header .list {
+    display: none;
+  }
+
+  .header .nav-btn {
+    display: block;
   }
 }

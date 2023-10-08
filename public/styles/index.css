@@ -461,6 +461,10 @@ li {
     padding-inline: 5rem;
   }
 
+  .section-about .content .img {
+    width: 80rem;
+  }
+
   .section-annocuments {
     padding-inline: 5rem;
     padding-block: 5rem;
@@ -473,4 +477,23 @@ li {
   .section-contact {
     padding-inline: 5rem;
   }
+}
+
+@media (max-width: 990px) {
+  html {
+    font-size: 37.5%; /* 6px */
+  }
+
+  .section-annocuments {
+    height: 80vh;
+  }
+}
+
+@media (max-width: 790px) {
+  html {
+    font-size: 31.25%; /* 5px */
+  }
+}
+
+@media (max-width: 600px) {
 }
