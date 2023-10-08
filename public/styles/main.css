@@ -25,6 +25,11 @@
   font-size: 2.8rem;
   cursor: pointer;
   color: #fff;
+  transition: all 0.3s ease-in-out;
+}
+
+.header .list .item a:hover {
+  color: #aeaeae;
 }
 
 .header .buttons {
@@ -127,12 +132,22 @@
   gap: 1rem;
   font-size: 2rem;
   color: #aeaeae;
+  transition: all 0.3s ease-in-out;
+}
+
+.footer .wrapper .container .link:hover {
+  color: #fff;
 }
 
 .footer .wrapper .container .link svg {
   fill: #aeaeae;
   height: 2.4rem;
   width: 2.4rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.footer .wrapper .container .link:hover svg {
+  fill: #fff;
 }
 
 .footer .copyright {

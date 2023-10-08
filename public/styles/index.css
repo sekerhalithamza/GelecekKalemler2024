@@ -26,6 +26,10 @@ li {
   list-style: none;
 }
 
+::-webkit-scrollbar {
+  display: none;
+}
+
 /* Hero */
 .section-hero {
   position: relative;
@@ -262,6 +266,10 @@ li {
   justify-content: center;
   background-color: #1c1c1c;
   transition: all 0.3s ease-in-out;
+}
+
+.section-faq .wrapper .container:hover {
+  cursor: pointer;
 }
 
 .section-faq .wrapper .container.open {
