@@ -158,3 +158,29 @@
   font-size: 1.6rem;
   color: #aeaeae;
 }
+
+/* Up Button */
+
+.up-btn {
+  display: none;
+  position: fixed;
+  bottom: 3rem;
+  right: 3rem;
+  width: 6rem;
+  height: 6rem;
+  border-radius: 100%;
+  background-color: #fff;
+  place-items: center;
+  transition: all 0.3s ease-in-out;
+}
+
+.up-btn:hover {
+  background-color: #aeaeae;
+  cursor: pointer;
+}
+
+.up-btn svg {
+  width: 4.4rem;
+  height: 4.4rem;
+  fill: #000;
+}
