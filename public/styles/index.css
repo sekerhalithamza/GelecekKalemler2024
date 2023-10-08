@@ -9,6 +9,7 @@
 
 html {
   font-size: 62.5%;
+  overflow-x: hidden;
 }
 
 body {
@@ -420,4 +421,25 @@ li {
   background-color: #fff;
   color: #000;
   cursor: pointer;
+}
+
+/* Responsive */
+
+@media (max-width: 1440px) {
+  .section-about {
+    padding-inline: 10rem;
+  }
+
+  .section-annocuments {
+    padding-inline: 10rem;
+    padding-block: 5rem;
+  }
+
+  .section-faq {
+    padding-inline: 10rem;
+  }
+
+  .section-contact {
+    padding-inline: 10rem;
+  }
 }
