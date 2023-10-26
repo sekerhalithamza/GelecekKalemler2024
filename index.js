@@ -34,7 +34,7 @@ app.use(express.static(`${__dirname}/public`));
 app.use("/", require("./routers/siteRouter"));
 
 // Starting the server
-const port = process.env.port || 3000;
+const port = process.env.port || 80;
 app.listen(port, () => {
   console.log(`App running on port ${port}...`);
 });
