@@ -32,57 +32,20 @@
   color: #aeaeae;
 }
 
-.header .buttons {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 2rem;
-}
-
-.header .buttons .btn {
+.header .application-btn {
   font-size: 2.4rem;
   padding: 1.5rem 3rem;
   border-radius: 5px;
   border: 0.4rem solid #fff;
   cursor: pointer;
-}
-
-.header .buttons .btn.register-btn {
   background-color: #fff;
   color: #000;
   transition: all 0.3s ease-in-out;
 }
 
-.header .buttons .btn.register-btn:hover {
+.header .application-btn:hover {
   background-color: #aeaeae;
   border-color: #aeaeae;
-}
-
-.header .buttons .btn.login-btn {
-  background-color: #0002;
-  color: #fff;
-  transition: all 0.3s ease-in-out;
-}
-
-.header .buttons .btn.login-btn:hover {
-  background-color: #fff;
-  color: #000;
-}
-
-.header .buttons .user-btn {
-  background-color: #fff;
-  width: 6rem;
-  height: 6rem;
-  border-radius: 5px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.header .buttons .user-btn svg {
-  fill: #000;
-  width: 4.8rem;
-  height: 4.8rem;
 }
 
 .navbar {
