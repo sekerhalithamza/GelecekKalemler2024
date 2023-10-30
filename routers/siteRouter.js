@@ -5,4 +5,9 @@ const router = express.Router();
 
 router.route("/").get(controller.homePage);
 
+router
+  .route("/application")
+  .get(controller.applicationPage)
+  .post(controller.createApplication);
+
 module.exports = router;

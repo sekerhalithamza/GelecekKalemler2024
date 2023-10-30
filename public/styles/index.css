@@ -10,10 +10,10 @@
 html {
   font-size: 62.5%;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 body {
-  scroll-behavior: smooth;
   font-size: 1.6rem;
   color: #fff;
   font-family: "Roboto", sans-serif;

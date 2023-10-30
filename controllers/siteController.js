@@ -1,4 +1,9 @@
 exports.homePage = async (req, res) => {
-  if (!req.session?.user) return res.render("index", { user: undefined });
-  res.render("index", { user: req.session.user });
+  res.render("index");
 };
+
+exports.applicationPage = async (req, res) => {
+  res.render("application");
+};
+
+exports.createApplication = async (req, res) => {};
