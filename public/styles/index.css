@@ -260,10 +260,9 @@ li {
 
 .section-faq .wrapper .container {
   width: 100%;
-  height: 10rem;
   display: flex;
   flex-direction: column;
-  gap: 5rem;
+  gap: 1rem;
   align-items: center;
   justify-content: center;
   background-color: #1c1c1c;
@@ -272,10 +271,6 @@ li {
 
 .section-faq .wrapper .container:hover {
   cursor: pointer;
-}
-
-.section-faq .wrapper .container.open {
-  height: 20rem;
 }
 
 .section-faq .wrapper .container .top,
@@ -322,12 +317,15 @@ li {
 
 .section-faq .wrapper .container .answer {
   display: none;
+  height: 0;
 }
 
 .section-faq .wrapper .container.open .answer {
   display: inline;
   font-size: 2rem;
   color: #aeaeae;
+  height: fit-content;
+  padding-block-end: 1rem;
 }
 
 /* Contact */
