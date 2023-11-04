@@ -2,14 +2,27 @@ const mongoose = require("mongoose");
 
 // Data scheme
 const applicationScheme = new mongoose.Schema({
+  name: {
+    type: String,
+    required: [true, "İsim olmadan başvuru yapılamaz."],
+    trim: true,
+  },
+  school: {
+    type: String,
+    required: [true, "Okul bilgisi olmadan başvuru yapılamaz."],
+  },
+  email: {
+    type: String,
+    required: [true, "E-Posta olmadan başvuru yapılamaz."],
+  },
   writing: {
     type: String,
-    required: [true, "A application must have a writing"],
+    required: [true, "Tiyatro yazısı olmadan başvuru yapılamaz."],
     trim: true,
   },
   certificate: {
     type: String,
-    required: [true, "A application must have a certificate"],
+    required: [true, "Veli izni olmadan başvuru yapılamaz."],
     trim: true,
   },
 });
@@ -26,6 +39,6 @@ const applicationScheme = new mongoose.Schema({
 
 */
 
-const application = mongoose.model("Application", applicationScheme);
+const Application = mongoose.model("Application", applicationScheme);
 
-module.exports = application;
+module.exports = Application;

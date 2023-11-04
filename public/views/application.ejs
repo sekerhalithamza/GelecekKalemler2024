@@ -3,11 +3,29 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Gelecek Kalemler - Ana Sayfa</title>
+    <meta name="title" content="Gelecek Kalemler Tiyatro Yarışması" />
+    <meta
+      name="description"
+      content="Gelecek Kalemler Tiyatro Yarışması, genç yeteneklere tiyatro sahnesinde fırsat sunuyor. Katılın, yeteneklerinizi sergileyin!"
+    />
+    <meta
+      name="keywords"
+      content="Gelecek Kalemler, tiyatro yarışması, genç yetenekler, sahne sanatları, dramatik sanatlar"
+    />
+    <meta name="author" content="Gelecek Kalemler" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="index, follow" />
+    <meta name="og:title" content="Gelecek Kalemler Tiyatro Yarışması" />
+    <meta
+      name="og:description"
+      content="Genç yeteneklere tiyatro sahnesinde fırsat sunan Gelecek Kalemler Tiyatro Yarışması'na katılın."
+    />
+    <meta name="og:url" content="https://www.gelecekkalemler.net/application" />
+    <meta name="og:type" content="website" />
+    <title>Gelecek Kalemler - Başvuru</title>
     <link rel="stylesheet" href="styles/main.css" />
     <link rel="stylesheet" href="styles/index.css" />
-    <script src="scripts/main.js" defer></script>
-    <script src="scripts/index.js" defer></script>
+    <script src="scripts/application.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -18,37 +36,52 @@
   </head>
   <body>
     <%- include('components/header.ejs') %>
-    <p class="wait-text">
+    <!-- <p class="wait-text">
       Başvurular şuan kapalı. Başvuruların ne zaman açılacağını görmek için
       <a href="/#annocuments">duyurular</a> sayfamızı ziyaret edebilirsiniz.
-    </p>
-    <!-- <input type="text" class="input" placeholder="İsim" required />
-    <input type="text" class="input" placeholder="Okul" required />
-    <input type="email" class="input" placeholder="E-Posta" required />
-    <label for="approval" class="label"
-      ><svg><use xlink:href="components/sprite.svg#file"></use></svg> Veli İzin
-      Belgesi</label
-    >
-    <input
-      name="approval"
-      type="file"
-      hidden
-      id="approval"
-      required
-      accept=".pdf, .docx, .doc"
-    />
-    <label for="theater" class="label">
-      <svg><use xlink:href="components/sprite.svg#pen"></use></svg>Tiyatro
-      Metni</label
-    >
-    <input
-      type="file"
-      hidden
-      id="theater"
-      required
-      accept=".pdf, .docx, .doc"
-    />
+    </p> -->
 
-    <button class="submit-btn" type="submit" id="applicationBtn">Gönder</button> -->
+    <form id="form">
+      <input type="text" class="input" placeholder="İsim" id="name" required />
+      <input
+        type="text"
+        class="input"
+        placeholder="Okul"
+        id="school"
+        required
+      />
+      <input
+        type="email"
+        class="input"
+        placeholder="E-Posta"
+        id="email"
+        required
+      />
+      <label for="approval" class="label"
+        ><svg><use xlink:href="components/sprite.svg#file"></use></svg> Veli
+        İzin Belgesi</label
+      >
+      <input
+        name="approval"
+        type="file"
+        hidden
+        id="approval"
+        required
+        accept=".pdf, .docx, .doc"
+      />
+      <label for="theater" class="label">
+        <svg><use xlink:href="components/sprite.svg#pen"></use></svg>Tiyatro
+        Metni</label
+      >
+      <input
+        type="file"
+        hidden
+        id="theater"
+        required
+        accept=".pdf, .docx, .doc"
+      />
+
+      <button class="submit-btn" type="submit" id="submit">Gönder</button>
+    </form>
   </body>
 </html>

@@ -4,10 +4,13 @@ const session = require("express-session");
 const mongoose = require("mongoose");
 const fs = require("fs");
 const dotenv = require("dotenv");
+const cors = require("cors");
 
 // LOCAL VARIABLES
 const app = express();
 dotenv.config({ path: "./config.env" });
+
+app.use(cors());
 
 const DB = process.env.DATABASE.replace(
   "<USERNAME>",
@@ -23,6 +26,7 @@ mongoose
 
 // MIDDLEWARES
 if (process.env.NODE_ENV === "development") app.use(morgan("dev"));
+app.use(express.json());
 
 // ROUTERS
 app.set("view engine", "ejs");
