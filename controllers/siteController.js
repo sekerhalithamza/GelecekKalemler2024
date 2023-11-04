@@ -21,7 +21,9 @@ exports.createApplication = async (req, res) => {
 
     const newApplication = await Application.create(newUser);
 
-    res.status(201).render("applicationRes", { status: "Success" });
+    res.status(201).json({
+      status: "success",
+    });
   } catch (err) {
     for (const file of req.files) {
       fs.unlink(file.path, err => {
@@ -29,8 +31,21 @@ exports.createApplication = async (req, res) => {
       });
     }
 
-    res
-      .status(400)
-      .render("applicationRes", { status: "Success", message: err.message });
+    res.status(400).json({
+      status: "fail",
+      message: err.message,
+    });
+    //
+  }
+};
+
+exports.getResult = async (req, res) => {
+  try {
+    if (req.params.status === "success")
+      res.status(201).render("applicationRes", { status: "success" });
+    else if (req.params.status === "fail")
+      res.status(400).render("applicationRes", { status: "fail" });
+  } catch (err) {
+    console.log(err);
   }
 };

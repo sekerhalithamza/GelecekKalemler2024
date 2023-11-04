@@ -24,4 +24,6 @@ router
   .get(controller.applicationPage)
   .post(upload.any(), controller.createApplication);
 
+router.route("/application/:status").get(controller.getResult);
+
 module.exports = router;

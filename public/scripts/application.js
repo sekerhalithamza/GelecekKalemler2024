@@ -25,5 +25,11 @@ form.addEventListener("submit", event => {
   fetch("/application/", {
     method: "POST",
     body: formData,
-  });
+  })
+    .then(res => {
+      return res.json();
+    })
+    .then(data => {
+      window.location.href = `/application/${data.status}`;
+    });
 });
