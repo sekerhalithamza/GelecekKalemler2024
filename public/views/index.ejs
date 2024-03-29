@@ -1,50 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="title" content="Gelecek Kalemler Tiyatro Yarışması" />
-    <meta
-      name="description"
-      content="Gelecek Kalemler Tiyatro Yarışması, genç yeteneklere tiyatro sahnesinde fırsat sunuyor. Katılın, yeteneklerinizi sergileyin!"
-    />
-    <meta
-      name="keywords"
-      content="Gelecek Kalemler, tiyatro yarışması, genç yetenekler, sahne sanatları, dramatik sanatlar"
-    />
-    <meta name="author" content="Gelecek Kalemler" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="robots" content="index, follow" />
-    <meta name="og:title" content="Gelecek Kalemler Tiyatro Yarışması" />
-    <meta
-      name="og:description"
-      content="Genç yeteneklere tiyatro sahnesinde fırsat sunan Gelecek Kalemler Tiyatro Yarışması'na katılın."
-    />
-    <meta name="og:url" content="https://www.gelecekkalemler.net" />
-    <meta name="og:type" content="website" />
 
-    <title>Gelecek Kalemler - Ana Sayfa</title>
-    <link rel="stylesheet" href="styles/main.css" />
-    <link rel="stylesheet" href="styles/index.css" />
-    <script src="scripts/main.js" defer></script>
-    <script src="scripts/index.js" defer></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Roboto:wght@300;400;500;700&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <%- include('components/header.ejs') %>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="title" content="Gelecek Kalemler Tiyatro Yarışması" />
+  <meta name="description"
+    content="Gelecek Kalemler Tiyatro Yarışması, genç yeteneklere tiyatro sahnesinde fırsat sunuyor. Katılın, yeteneklerinizi sergileyin!" />
+  <meta name="keywords"
+    content="Gelecek Kalemler, tiyatro yarışması, genç yetenekler, sahne sanatları, dramatik sanatlar" />
+  <meta name="author" content="Gelecek Kalemler" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="index, follow" />
+  <meta name="og:title" content="Gelecek Kalemler Tiyatro Yarışması" />
+  <meta name="og:description"
+    content="Genç yeteneklere tiyatro sahnesinde fırsat sunan Gelecek Kalemler Tiyatro Yarışması'na katılın." />
+  <meta name="og:url" content="https://www.gelecekkalemler.net" />
+  <meta name="og:type" content="website" />
+
+  <title>Gelecek Kalemler - Ana Sayfa</title>
+  <link rel="stylesheet" href="styles/main.css" />
+  <link rel="stylesheet" href="styles/index.css" />
+  <script src="scripts/main.js" defer></script>
+  <script src="scripts/index.js" defer></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Roboto:wght@300;400;500;700&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body>
+  <%- include('components/header.ejs') %>
 
     <section class="section-hero">
       <img src="components/section-hero.webp" class="bg" alt="" />
-      <img
-        src="components/gelecekkalemlerlogo.webp"
-        alt="Gelecek Kalemler Logo"
-        class="logo"
-      />
+      <img src="components/gelecekkalemlerlogo.webp" alt="Gelecek Kalemler Logo" class="logo" />
       <div class="texts">
         <h1 class="title">Gelecek Kalemler</h1>
         <p class="subtitle">Liseler Arası Tiyatro Yazma Yarışması</p>
@@ -56,11 +46,7 @@
     <section class="section-about" id="about">
       <h2 class="title">Hakkında</h2>
       <div class="content">
-        <img
-          src="components/section-about.webp"
-          alt="Writing a Theater"
-          class="img"
-        />
+        <img src="components/section-about.webp" alt="Writing a Theater" class="img" />
         <div class="container">
           <p class="text">
             <span>Gelecek Kalemler</span>, İstanbul'un Yıldızı'nda, Beşiktaş
@@ -87,6 +73,14 @@
       <div class="wrapper">
         <div class="container">
           <div class="top">
+            <span class="subtitle">Yarışma sonuçları</span>
+            <span class="date">30.03.2024</span>
+          </div>
+          <p class="text">Yarışma sonuçları açıklanmıştır.<a href="components/sonuclar.pdf">"Bu linkten"</a> sonuçlara
+            ulaşabilirsiniz.</p>
+        </div>
+        <div class="container">
+          <div class="top">
             <span class="subtitle">Başvuru Bitimi</span>
             <span class="date">14.03.2024</span>
           </div>
@@ -102,9 +96,7 @@
           </div>
           <p class="text">
             Başvuru yapmakta sorun yaşayan katılımcılarımız belgelerini
-            <a href="mailto:gelecekkalemlerkomitesi@gmail.com"
-              >"gelecekkalemlerkomitesi@gmail.com"</a
-            >
+            <a href="mailto:gelecekkalemlerkomitesi@gmail.com">"gelecekkalemlerkomitesi@gmail.com"</a>
             mail adresine iletebilir.
           </p>
         </div>
@@ -125,9 +117,7 @@
           </div>
           <p class="text">
             Başvurularınızı
-            <a style="color: white; font-weight: 500" href="/application"
-              >Başvur</a
-            >
+            <a style="color: white; font-weight: 500" href="/application">Başvur</a>
             sayfamızından gerçekleştirebilirsiniz.
           </p>
         </div>
@@ -170,11 +160,13 @@
       <div class="wrapper">
         <div class="container faq-container">
           <div class="top">
-            <span class="text"
-              ><svg><use xlink:href="components/sprite.svg#dot"></use></svg
-              >Yarışmaya Katılacak Kişiler için Konulan Şartlar Nelerdir?
+            <span class="text"><svg>
+                <use xlink:href="components/sprite.svg#dot"></use>
+              </svg>Yarışmaya Katılacak Kişiler için Konulan Şartlar Nelerdir?
             </span>
-            <svg><use xlink:href="components/sprite.svg#plus"></use></svg>
+            <svg>
+              <use xlink:href="components/sprite.svg#plus"></use>
+            </svg>
           </div>
           <p class="answer">
             İstanbul valiliğine bağlı ortaöğretim kurumlarında okuyan her
@@ -185,12 +177,14 @@
         </div>
         <div class="container faq-container">
           <div class="top">
-            <span class="text"
-              ><svg><use xlink:href="components/sprite.svg#dot"></use></svg
-              >Yarışmaya Katılacağımız Eserler ile İlgili Neylere Dikkat
+            <span class="text"><svg>
+                <use xlink:href="components/sprite.svg#dot"></use>
+              </svg>Yarışmaya Katılacağımız Eserler ile İlgili Neylere Dikkat
               Etmeliyiz?
             </span>
-            <svg><use xlink:href="components/sprite.svg#plus"></use></svg>
+            <svg>
+              <use xlink:href="components/sprite.svg#plus"></use>
+            </svg>
           </div>
           <p class="answer">
             Yarışmaya katılacak olan eserlerin uzunluğu en az 1.000 (bin) en çok
@@ -203,11 +197,14 @@
         </div>
         <div class="container faq-container">
           <div class="top">
-            <span class="text"
-              ><svg><use xlink:href="components/sprite.svg#dot"></use></svg>
+            <span class="text"><svg>
+                <use xlink:href="components/sprite.svg#dot"></use>
+              </svg>
               Yarışmanın Ödülleri Nelerdir?
             </span>
-            <svg><use xlink:href="components/sprite.svg#plus"></use></svg>
+            <svg>
+              <use xlink:href="components/sprite.svg#plus"></use>
+            </svg>
           </div>
           <p class="answer">
             Yarışmamızda; 1. Olan Eserin Sahibine: 5.000 lira nakit ödül ve Ödül
@@ -224,23 +221,16 @@
       <div class="wrapper">
         <div class="start">
           <span class="title">Başka sorunuz mu var?</span>
-          <span class="subtitle"
-            >Bize e-mailinizi verin. Biz size geri dönüş yapacağız.</span
-          >
+          <span class="subtitle">Bize e-mailinizi verin. Biz size geri dönüş yapacağız.</span>
         </div>
         <div class="end">
-          <input
-            class="input"
-            type="email"
-            id="contact-input"
-            placeholder="example@example.com"
-          />
+          <input class="input" type="email" id="contact-input" placeholder="example@example.com" />
           <button class="btn" type="submit" id="contact-btn">Gönder</button>
         </div>
       </div>
     </section>
 
-    <%- include('components/footer.ejs') %> <%- include('components/upBtn.ejs')
-    %>
-  </body>
+    <%- include('components/footer.ejs') %> <%- include('components/upBtn.ejs') %>
+</body>
+
 </html>
